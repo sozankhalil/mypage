@@ -7,9 +7,24 @@ const myDive3=document.querySelector('#mymovie3');
 const myDive4=document.querySelector('#mymovie4');
 
 
-// myDives.forEach(dive=> {
-//     dive.innerHTML =`<img src="images/movie1.jpg" alt=""> <h3>the hunger game</h3>`;
-// })
+let movies=[
+    { 
+        name: 'The Hunger Game',
+        image:'images/movie1.jpg' },
+    {
+        name: 'The Hunger Game',
+        image: 'images/movie1.jpg'
+    },
+    {
+        name: 'The Hunger Game',
+        image: 'images/movie1.jpg'
+    },
+    {
+        name: 'The Hunger Game',
+        image: 'images/movie1.jpg'
+    },
+
+]
 
 
 let movieNames=['The Hunger Game','Red Sparrow','Passengers','Mother'];
@@ -45,28 +60,10 @@ let myImages = ['images/movie1.jpg', 'images/movie2.jpg', 'images/movie3.jpg', '
 //     }
 
 
-// myImages[0]=new Image();
-// myImages[0].src = 'images/movie1.jpg';
 
-// myImages[1] = new Image();
-// myImages[1].src = 'images/movie2.jpg';
 
-// myImages[2] = new Image();
-// myImages[2].src = 'images/movie3.jpg';
 
-// myImages[3] = new Image();
-// myImages[3].src = 'images/movie4.jpg';
-// function showMyMovies(){
-//     for (const image of myImages) {
-//         for (const movieName of movieNames) {
-//             myDives.forEach(dive => {
-//                 dive.innerHTML = `<img src="${image}" alt=""> <h3>${movieName}</h3>`;
-//             });
-            
-//         }
-        
-//     }
-// }
+
 
 Button.addEventListener('click', showMyMovies);
 
